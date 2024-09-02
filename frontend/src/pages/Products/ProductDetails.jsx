@@ -42,6 +42,8 @@ const ProductDetails = () => {
   const [createReview, { isLoading: loadingProductReview }] =
     useCreateReviewMutation();
 
+  console.log("Rating : ", rating);         // Debuggin rating not displayed properly. Only show 0.
+
   const submitHandler = async (e) => {
     e.preventDefault();
 
